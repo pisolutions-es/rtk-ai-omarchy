@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.jk.rtk-gain",
+  "name": "RTK Token Savings",
+  "version": "1.0.0",
+  "author": "jk",
+  "license": "MIT",
+  "description": "Bar widget showing RTK token savings stats — total commands, tokens in/out, savings percentage, and execution time.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "RTK Token Savings",
+    "description": "Click for RTK token savings stats: commands run, tokens saved, efficiency, and execution time.",
+    "category": "Tools",
+    "defaultSection": "right",
+    "allowMultiple": false
+  }
+}
