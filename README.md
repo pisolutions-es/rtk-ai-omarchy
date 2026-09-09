@@ -21,13 +21,13 @@ The widget reads the global RTK tracking database. It does not collect or transm
 
 ## Installation
 
-Clone this repository into the Omarchy user plugin directory:
+Add the plugin through Omarchy's plugin manager:
 
 ```bash
-git clone https://github.com/pisolutions-es/rtk-ai-omarchy.git ~/.config/omarchy/plugins/io.github.jk.rtk-gain
+omarchy plugin add https://github.com/pisolutions-es/rtk-ai-omarchy.git --enable
 ```
 
-Then add the widget ID to the right section of `~/.config/omarchy/shell.json`:
+If needed, move the widget to the right section of `~/.config/omarchy/shell.json`:
 
 ```json
 {
@@ -43,18 +43,17 @@ omarchy restart shell
 
 ## Removal
 
-1. Remove the `io.github.jk.rtk-gain` entry from the right section of `~/.config/omarchy/shell.json`.
-2. Restart Omarchy Shell:
+Remove the plugin through Omarchy's plugin manager:
 
-   ```bash
-   omarchy restart shell
-   ```
+```bash
+omarchy plugin remove io.github.jk.rtk-gain
+```
 
-3. After verifying the widget is no longer configured, remove its user-owned plugin directory:
+If the widget was manually added to the bar layout, remove its `io.github.jk.rtk-gain` entry from `~/.config/omarchy/shell.json` as well. Restart the shell if necessary:
 
-   ```bash
-   rm -rf ~/.config/omarchy/plugins/io.github.jk.rtk-gain
-   ```
+```bash
+omarchy restart shell
+```
 
 Removal only deletes the plugin files. It does not delete or modify RTK's tracking database.
 
