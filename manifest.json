@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "io.github.jk.rtk-gain",
   "name": "RTK Token Savings",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "jk",
   "license": "MIT",
-  "description": "Bar widget showing RTK token savings stats — total commands, tokens in/out, savings percentage, and execution time.",
+  "description": "Bar widget showing RTK token savings, period summaries, parse health, and quota statistics.",
   "kinds": [
     "bar-widget"
   ],
@@ -14,7 +14,7 @@
   },
   "barWidget": {
     "displayName": "RTK Token Savings",
-    "description": "Click for RTK token savings stats: commands run, tokens saved, efficiency, and execution time.",
+    "description": "Click for RTK token savings, commands, daily/weekly/monthly activity, parse health, and quota.",
     "category": "Tools",
     "defaultSection": "right",
     "allowMultiple": false

@@ -1,0 +1,9 @@
+# Local agent and tooling state
+.agents/
+.atl/
+.codegraph/
+
+# Local editor and runtime artifacts
+*.qmlc
+*.jsc
+
