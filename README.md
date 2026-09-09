@@ -41,6 +41,23 @@ Omarchy Shell hot-reloads user plugin files. If the widget does not appear, rest
 omarchy restart shell
 ```
 
+## Removal
+
+1. Remove the `io.github.jk.rtk-gain` entry from the right section of `~/.config/omarchy/shell.json`.
+2. Restart Omarchy Shell:
+
+   ```bash
+   omarchy restart shell
+   ```
+
+3. After verifying the widget is no longer configured, remove its user-owned plugin directory:
+
+   ```bash
+   rm -rf ~/.config/omarchy/plugins/io.github.jk.rtk-gain
+   ```
+
+Removal only deletes the plugin files. It does not delete or modify RTK's tracking database.
+
 ## Development
 
 Validate the manifest, collector, and QML before submitting changes:
