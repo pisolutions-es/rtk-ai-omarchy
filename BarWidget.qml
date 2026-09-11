@@ -104,8 +104,8 @@ BarWidget {
       totalInput = s.total_input || 0
       totalOutput = s.total_output || 0
       totalSaved = s.total_saved || 0
-      // rtk reports this value as a ratio (0.058 == 5.8%).
-      avgSavingsPct = (s.avg_savings_pct || 0) * 100
+      // rtk reports this value as a percentage (8.4 == 8.4%).
+      avgSavingsPct = s.avg_savings_pct || 0
       totalTimeMs = s.total_time_ms || 0
       avgTimeMs = s.avg_time_ms || 0
       topCommands = data.top_commands || []
